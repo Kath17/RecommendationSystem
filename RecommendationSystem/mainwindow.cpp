@@ -50,10 +50,10 @@ void MainWindow::on_pushButton_2_clicked()
 //    ui->tableView->show();
 
     RecomenderSystem RS;
-//    RS.load_data("/home/kat/Documentos/TBD-Recommendation-System/Interfaz/RecommendationSystem/BD/MovieRatings.csv",';');
+    RS.load_data("/home/crhistian/Documents/semestreIX/TBD/SystemRecommendation/RecommendationSystem/BD/MovieRatings.csv",';');
 //    RS.load_data("/home/kat/Documentos/TBD-Recommendation-System/Interfaz/RecommendationSystem/BD/BDLibro.csv",';');
 //    RS.load_data("/home/kat/Documentos/TBD-Recommendation-System/Interfaz/RecommendationSystem/BD/BDLibros.csv",';');
-    RS.load_data("/home/kat/Documentos/TBD-Recommendation-System/Interfaz/RecommendationSystem/BD/BDMovieLens.csv",',');
+//    RS.load_data("/home/kat/Documentos/TBD-Recommendation-System/Interfaz/RecommendationSystem/BD/BDMovieLens.csv",',');
 
     if(opcion=="K-vecinos más cercanos"){
         vector<tuple<float,string>> Vecinos = RS.vecino_cercano(nombre_1,k,distancia.toStdString());
@@ -155,6 +155,7 @@ void MainWindow::on_comboBox_2_activated(const QString &arg1)
 //    else if(arg1 == "Pearson")
 //    {
 //        distancia = "pearson";
+//      comentario prueba para hacer commit
 //    }
 //    else if(arg1 == "Similitud del Coseno")
 //    {
