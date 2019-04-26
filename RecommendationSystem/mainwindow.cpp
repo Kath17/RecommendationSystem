@@ -84,7 +84,7 @@ void MainWindow::on_pushButton_2_clicked()
 
     else if(opcion == "Hallar puntaje aprox.")
     {
-        float res = RS.prob_movie(nombre_1,item_,k,distancia.toStdString());
+        float res = RS.probabilidad_item(nombre_1,item_,k,distancia.toStdString());
 //        QString a = QString::number(res);
         if(res == 0)
         {

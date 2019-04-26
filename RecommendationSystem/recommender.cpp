@@ -349,7 +349,7 @@ public:
     }
     /**FIN VECINO CERCANO 2*/
 
-    float prob_movie(string user,string movie,int k,string algoritmo)
+    float probabilidad_item(string user,string movie,int k,string algoritmo)
     {
         try {
             float rating = data[user].at(movie);
